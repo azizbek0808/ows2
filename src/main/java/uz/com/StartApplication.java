@@ -34,11 +34,11 @@ public class StartApplication extends SpringBootServletInitializer {
         return application.sources(StartApplication.class);
     }
 
-    @Bean
-    public SpringLiquibase liquibase() {
-        SpringLiquibase liquibase = new SpringLiquibase();
-        liquibase.setChangeLog(changeLogDir);
-        liquibase.setDataSource(dataSource);
-        return liquibase;
-    }
+//    @Bean
+//    public SpringLiquibase liquibase() {
+//        SpringLiquibase liquibase = new SpringLiquibase();
+//        liquibase.setChangeLog(changeLogDir);
+//        liquibase.setDataSource(dataSource);
+//        return liquibase;
+//    }
 }
